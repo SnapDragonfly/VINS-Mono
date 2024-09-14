@@ -5,6 +5,8 @@ set(CMAKE_BUILD_TYPE "Release")
 set(CMAKE_CXX_FLAGS "-std=c++11 -march=native")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall")
 
+set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake)
+
 find_package(catkin REQUIRED COMPONENTS roscpp std_msgs geometry_msgs nav_msgs cv_bridge image_transport)
 
 find_package(OpenCV REQUIRED)
